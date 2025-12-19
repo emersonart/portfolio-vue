@@ -8,12 +8,12 @@
 		<div class="text-center z-10 max-w-4xl animate-enter fade-in-10 slide-in-from-b-12 animate-duration-1000">
 			<img src="../assets/images/emerson.jpg" alt="Emerson Bruno"
 				v-animateonscroll="{ enterClass: 'animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000', leaveClass: 'animate-leave fade-out-0' }"
-				class="rounded-full mb-16 w-50 h-50 self-center mx-auto animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000" />
+				class="shadow-lg shadow-purple-500/25 transition-all duration-300 rounded-full mb-16 w-50 h-50 hover:scale-105 self-center mx-auto animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000" />
 			<h1
 				v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
 				class="text-shadow-2xs text-5xl md:text-7xl font-extrabold text-white mb-6 animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000">
 				Olá, eu sou <span
-					class="bg-gradient-to-r from-purple-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">Emerson</span>
+					class="bg-linear-to-r from-purple-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">Emerson</span>
 			</h1>
 			<p v-animateonscroll="{ enterClass: 'animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
 				class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000">
@@ -35,7 +35,7 @@
 					<span class="text-md">Linkedin</span>
 				</Button>
 				<Button variant="outlined" size="large"
-					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 border-2 rounded-full cursor-pointer bg-transparent border-purple-500/30 text-white hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300 group w-full">
+					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 rounded-full cursor-pointer bg-linear-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white border-0 shadow-lg shadow-purple-500/25 transition-all duration-300 group w-full">
 					<i class="pi pi-inbox text-2xl group-hover:text-purple-400 transition-colors"></i>
 					<span class="text-md">Contato</span>
 				</Button>
