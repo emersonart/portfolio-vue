@@ -41,7 +41,7 @@
 				</Button>
 			</div>
 		</div>
-		<div class="flex flex-col items-center gap-2">
+		<div class="flex flex-col items-center gap-2 mt-20">
 			<span class="text-sm font-medium text-purple-100 opacity-30">SCROLL</span>
 			<span
 				class="animate-bounce h-8 w-8 bg-primary text-primary-contrast rounded-full inline-flex items-center justify-center">

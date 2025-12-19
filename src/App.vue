@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BackgroundNoise from '@/components/ui/BackgroundNoise.vue';
 import HeroSection from './components/HeroSection.vue';
+import AboutSection from './components/AboutSection.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import HeroSection from './components/HeroSection.vue';
 		<!-- content-->
 		<div class="relative">
 			<HeroSection />
+			<AboutSection />
 		</div>
 	</div>
 </template>

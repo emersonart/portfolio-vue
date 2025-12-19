@@ -1,3 +1,6 @@
 @import 'tailwindcss';
 @import 'tailwindcss-primeui';
 @import 'primeicons/primeicons.css';
+.bg {
+	background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+}
