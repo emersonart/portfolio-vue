@@ -1,12 +1,12 @@
 <template>
-	<section id="about" class="pt-14 pb-32 px-6 relative">
+	<section id="about" class="pt-18 pb-32 px-6 relative">
 		<div class="max-w-6xl mx-auto">
 			<div class="grid lg:grid-cols-2 gap-16 items-center">
 				<div class="relative">
 					<div class="aspect-square max-w-md mx-auto relative"
 						v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave slide-out-from-t-20 fade-out-0 animate-duration-1000' }">
 						<div
-							v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1500', leaveClass: 'animate-leave fade-out-0 slide-out-from-l-8' }"
+							v-animateonscroll="{ enterClass: 'animate-enter fade-in-0 slide-in-from-l-8 animate-duration-1500', leaveClass: 'animate-leave fade-out-0 slide-out-from-l-8' }"
 							class="absolute inset-0 bg-linear-to-br from-purple-600/20 to-violet-600/20 rounded-3xl rotate-6" />
 						<div
 							v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1500', leaveClass: 'animate-leave fade-out-0 slide-out-from-r-8' }"
@@ -89,7 +89,7 @@
 					</p>
 					<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 						<div v-for="(detail, index) in devDetails" :key="index"
-							v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1000 animate-delay-' + (index * 200), leaveClass: 'animate-leave slide-out-from-t-10 fade-out-0 animate-duration-1000' }"
+							v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1000 animate-delay-' + (index * 300), leaveClass: 'animate-leave slide-out-from-t-10 fade-out-0 animate-duration-1000' }"
 							class="break-word flex flex-col justify-between text-center p-2 rounded-2xl bg-purple-500/5 hover:scale-110 transition-all duration-300 group border border-purple-500/10 hover:border-purple-500/30">
 							<i
 								:class="detail.icon + ' text-3xl text-purple-400/40 group-hover:text-purple-400 group-hover:scale-110 transition-all duration-300 mx-auto mb-4 mt-2'" />
@@ -106,12 +106,7 @@
 	</section>
 </template>
 <script setup lang="ts">
-interface devInfo {
-	icon: string;
-	label: string;
-	value: string;
-}
-
+import type { devInfo } from '@/types/devInfo';
 const devDetails: devInfo[] = [
 	{ icon: 'pi pi-map-marker', label: 'Projetos', value: '20+' },
 	{ icon: 'pi pi-code', label: 'Anos Exp.', value: '5+' },

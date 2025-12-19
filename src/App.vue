@@ -2,6 +2,7 @@
 import BackgroundNoise from '@/components/ui/BackgroundNoise.vue';
 import HeroSection from './components/HeroSection.vue';
 import AboutSection from './components/AboutSection.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import AboutSection from './components/AboutSection.vue';
 		<div class="relative">
 			<HeroSection />
 			<AboutSection />
+			<ProjectsSection />
 		</div>
 	</div>
 </template>
