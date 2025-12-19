@@ -24,21 +24,24 @@
 			<div
 				v-animateonscroll="{ enterClass: 'animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
 				class="flex items-center justify-center gap-4 mb-16 animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000">
-				<Button variant="outlined" size="large"
+				<a variant="outlined" href="https://github.com/emersonart" target="_blank" rel="noopener noreferrer"
+					size="large"
 					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 border-2 rounded-full cursor-pointer bg-transparent border-purple-500/30 text-white hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300 group w-full">
 					<i class="pi pi-github text-2xl group-hover:text-purple-400 transition-colors"></i>
 					<span class="text-md">Github</span>
-				</Button>
-				<Button variant="outlined" size="large"
+				</a>
+				<a variant="outlined" size="large" href="https://www.linkedin.com/in/emerson-bd-silva/" target="_blank"
+					rel="noopener noreferrer"
 					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 border-2 rounded-full cursor-pointer bg-transparent border-purple-500/30 text-white hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300 group w-full">
 					<i class="pi pi-linkedin text-2xl group-hover:text-purple-400 transition-colors"></i>
 					<span class="text-md">Linkedin</span>
-				</Button>
-				<Button variant="outlined" size="large"
+				</a>
+				<a variant="outlined" size="large" href="mailto:emersonbruno_@hotmail.com" target="_blank"
+					rel="noopener noreferrer"
 					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 rounded-full cursor-pointer bg-linear-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white border-0 shadow-lg shadow-purple-500/25 transition-all duration-300 group w-full">
 					<i class="pi pi-inbox text-2xl group-hover:text-purple-400 transition-colors"></i>
 					<span class="text-md">Contato</span>
-				</Button>
+				</a>
 			</div>
 		</div>
 		<div class="flex flex-col items-center gap-2 mt-20">
