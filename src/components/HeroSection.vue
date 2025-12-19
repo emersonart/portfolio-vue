@@ -8,7 +8,7 @@
 		<div class="text-center z-10 max-w-4xl animate-enter fade-in-10 slide-in-from-b-12 animate-duration-1000">
 			<img src="../assets/images/emerson.jpg" alt="Emerson Bruno"
 				v-animateonscroll="{ enterClass: 'animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000', leaveClass: 'animate-leave fade-out-0' }"
-				class="shadow-lg shadow-purple-500/25 transition-all duration-300 rounded-full mb-16 w-50 h-50 hover:scale-105 self-center mx-auto animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000" />
+				class="shadow-lg shadow-purple-500/25 transition-all duration-300 rounded-full mb-16 w-40 h-40 hover:scale-105 self-center mx-auto animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000" />
 			<h1
 				v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }"
 				class="text-shadow-2xs text-5xl md:text-7xl font-extrabold text-white mb-6 animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000">
@@ -41,7 +41,13 @@
 				</Button>
 			</div>
 		</div>
-
+		<div class="flex flex-col items-center gap-2">
+			<span class="text-sm font-medium text-purple-100 opacity-30">SCROLL</span>
+			<span
+				class="animate-bounce h-8 w-8 bg-primary text-primary-contrast rounded-full inline-flex items-center justify-center">
+				<i class="pi pi-angle-double-down text-purple-100 opacity-30" />
+			</span>
+		</div>
 
 	</section>
 </template>
