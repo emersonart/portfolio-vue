@@ -7,18 +7,18 @@
 		</div>
 		<motion.div :initial="{ opacity: 0, y: 30 }" :animate="{ opacity: 1, y: 0 }"
 			:transition="{ duration: 0.8, ease: 'easeOut' }"
-			class="text-center z-10 max-w-4xl animate-enter fade-in-10 slide-in-from-b-12 animate-duration-1000">
+			class=" wrap-break-word text-center z-10 max-w-full animate-enter fade-in-10 slide-in-from-b-12 animate-duration-1000">
 			<motion.img :initial="{ opacity: 0, scale: 0.9 }" :animate="{ opacity: 1, scale: 1 }" :transition="{ delay: 0.2 }"
 				:src="imgProfile" alt="Emerson Bruno"
 				class="mt-24 shadow-lg shadow-purple-500/25 transition-all duration-300 rounded-full mb-16 w-40 h-40 hover:scale-105 self-center mx-auto animate-enter fade-in-5 slide-in-from-t-12 animate-duration-2000" />
 			<motion.h1 :initial="{ opacity: 0, y: 20 }" :animate="{ opacity: 1, y: 0 }"
 				:transition="{ delay: 0.3, duration: 0.8 }"
-				class="text-shadow-2xs text-5xl md:text-7xl font-extrabold text-white mb-6 animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000">
+				class=" whitespace-break-spaces wrap-break-word text-shadow-2xs text-5xl md:text-7xl xs:text-medium font-extrabold text-white mb-6 animate-enter fade-in-10 slide-in-from-t-12 animate-duration-1000">
 				Olá, eu sou <span
 					class="bg-linear-to-r from-purple-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">Emerson</span>
 			</motion.h1>
 			<p :initial="{ opacity: 0, y: 20 }" :animate="{ opacity: 1, y: 0 }" :transition="{ delay: 0.5, duration: 0.8 }"
-				class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000">
+				class="whitespace-break-spaces text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-enter fade-in-15 slide-in-from-t-12 animate-duration-1000">
 				Desenvolvedor Full Stack apaixonado por criar
 				<span className="text-purple-400"> experiências digitais </span>
 				únicas e inovadoras
