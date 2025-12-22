@@ -1,6 +1,7 @@
 {
+  "homepage": "https://emersonart.github.io/portfolio-vue",
   "name": "portfolio-vue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -13,7 +14,9 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix --cache",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli src/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@primeuix/themes": "^2.0.2",
@@ -38,6 +41,7 @@
     "autoprefixer": "^10.4.23",
     "eslint": "^9.39.1",
     "eslint-plugin-vue": "~10.5.1",
+    "gh-pages": "^6.3.0",
     "jiti": "^2.6.1",
     "npm-run-all2": "^8.0.4",
     "postcss": "^8.5.6",
