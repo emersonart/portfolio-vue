@@ -72,7 +72,7 @@
 						class="
 						text-4xl md:text-5xl font-extrabold text-white mb-6">
 						Transformando ideias em <span
-							class="bg-linear-to-tr from-green-800 to-green-300 bg-clip-text text-transparent">código</span>
+							class="bg-linear-to-tr from-amber-800 to-amber-300 bg-clip-text text-transparent">código</span>
 					</h2>
 					<p v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-20 animate-duration-1500 animate-delay-600 animate-ease-in-out', leaveClass: 'animate-leave slide-out-from-l-20 fade-out-60 animate-duration-1000 animate-delay-500' }"
 						class="text-gray-400 text-lg leading-relaxed mb-8">

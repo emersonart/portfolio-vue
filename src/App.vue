@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { useScroll, motion } from "motion-v"
 import BackgroundNoise from '@/components/ui/BackgroundNoise.vue';
 import HeroSection from './components/HeroSection.vue';
 import AboutSection from './components/AboutSection.vue';
 import ProjectsSection from './components/ProjectsSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
+const { scrollYProgress } = useScroll()
 </script>
 
 <template>
+	<motion.div :style="{ scaleX: scrollYProgress, originX: 0, }"
+		class="fixed h-[2px] bg-amber-400 inset-x-0 top-0 z-10" />
 	<div class="min-h-screen bg-[#0a0a0f] text-white overflow-x-hidden">
 		<!-- Gradient mesh background -->
 		<div class="fixed inset-0 pointer-events-none">

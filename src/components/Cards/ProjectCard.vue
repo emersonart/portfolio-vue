@@ -13,12 +13,12 @@
 		<div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
 			<div class="flex flex-wrap gap-2 mb-4">
 				<Badge v-for="(tag, tagIndex) in project.tags" :key="tagIndex" :label="tag" variant="outlined"
-					class="text-sm text-purple-300 border-purple-300/50 bg-purple-900/75 group-hover:bg-purple-900 transition-all duration-300">
+					class="text-sm text-purple-300 border-purple-300/50 bg-purple-900/75 group-hover:bg-amber-900 group-hover:text-white transition-all duration-300">
 					{{ tag }}
 				</Badge>
 			</div>
 			<h3
-				class="text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-purple-500 group-hover:shadow-2xl group-hover:text-shadow-purple-900 transition-all duration-400">
+				class="text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-amber-500 group-hover:shadow-2xl group-hover:text-shadow-purple-900 transition-all duration-400">
 				{{ project.title }}
 			</h3>
 			<p class="text-gray-400 text-sm md:text-base mb-4 line-clamp-2">
