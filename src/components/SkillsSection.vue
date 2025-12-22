@@ -1,5 +1,5 @@
 <template>
-	<section id="skills" class="py-32 px-6 relative overflow-hidden">
+	<section id="skills" class="py-24 px-6 relative overflow-hidden">
 		<div class="absolute top-1/4 right-0 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
 		<div class="absolute bottom-1/4 left-0 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl" />
 

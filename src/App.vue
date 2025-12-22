@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection.vue';
 import ProjectsSection from './components/ProjectsSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
 import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/FooterSection.vue";
 const { scrollYProgress } = useScroll()
 </script>
 
@@ -29,23 +30,7 @@ const { scrollYProgress } = useScroll()
 			<ProjectsSection />
 			<SkillsSection />
 			<ContactSection />
+			<FooterSection />
 		</div>
 	</div>
 </template>
-
-
-<style scoped>
-@keyframes shimmer {
-	0% {
-		transform: translateX(-100%);
-	}
-
-	100% {
-		transform: translateX(100%);
-	}
-}
-
-.animate-shimmer {
-	animation: shimmer 2s infinite;
-}
-</style>

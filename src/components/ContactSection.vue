@@ -1,5 +1,5 @@
 <template>
-	<section id="contact" class="py-32 px-6 relative">
+	<section id="contact" class="py-24 px-6 relative">
 		<div
 			class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/10 rounded-full blur-3xl" />
 		<div class="max-w-5xl mx-auto relative">
@@ -22,13 +22,13 @@
 					:transition="{ delay: index * 0.1, duration: 0.6 }" class="group w-full md:w-[calc(50%-1rem)] max-w-md">
 					<a v-if="info.href && info.href != '#' && info.href != 'javascript:;'" :href="info.href">
 						<div
-							class="h-full bg-gray-900/30 backdrop-blur-sm rounded-3xl p-8 border border-purple-500/10 hover:border-purple-500/30 transition-all duration-300 hover:transform hover:-translate-y-2">
+							class="h-full bg-gray-900/30 backdrop-blur-sm rounded-3xl p-8 border border-purple-500/10 group-hover:border-purple-500/30 transition-all duration-300 hover:transform hover:-translate-y-2">
 							<div
 								class="w-16 h-16 rounded-2xl bg-linear-to-br from-purple-600/20 to-violet-600/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
 								<span :class="'text-purple-400 ' + info.icon" />
 							</div>
-							<h3 class="text-white font-semibold text-lg mb-2">{{ info.label }}</h3>
-							<p class="text-purple-300 font-medium mb-2">{{ info.value }}</p>
+							<h3 class="text-white font-semibold text-lg mb-2 group-hover:text-amber-400">{{ info.label }}</h3>
+							<p class="text-purple-300 font-medium mb-2 ">{{ info.value }}</p>
 							<p class="text-gray-500 text-sm">{{ info.description }}</p>
 						</div>
 					</a>

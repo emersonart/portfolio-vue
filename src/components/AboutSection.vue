@@ -1,5 +1,5 @@
 <template>
-	<section id="about" class="pt-18 pb-32 px-6 relative">
+	<section id="about" class="pt-18 pb-24 px-6 relative">
 		<div class="max-w-6xl mx-auto">
 			<div class="grid lg:grid-cols-2 gap-16 items-center">
 				<div class="relative">
