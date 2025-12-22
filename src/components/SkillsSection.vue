@@ -4,7 +4,8 @@
 		<div class="absolute bottom-1/4 left-0 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl" />
 
 		<div class="max-w-6xl mx-auto relative">
-			<div class="text-center mb-16">
+			<motion.div :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
+				class="text-center mb-16">
 				<span class="text-purple-400 text-sm font-medium uppercase tracking-widest mb-4 block">
 					Habilidades
 				</span>
@@ -16,26 +17,31 @@
 				<p class="text-gray-400 text-lg max-w-2xl mx-auto">
 					Ferramentas e tecnologias que domino para criar soluções incríveis
 				</p>
-			</div>
+			</motion.div>
 			<div class="grid md:grid-cols-3 gap-12 mb-20">
-				<SkillCard v-for="(category, index) in skillCategories" :key="index" :skills="category.skills"
-					:title="category.title"
-					v-animateonscroll="{ enterClass: 'animate-enter fade-in-15 slide-in-from-b-12 animate-duration-1000 animate-delay-' + ((index + 1) * 200), leaveClass: 'animate-leave slide-out-from-t-12  fade-out' }" />
+				<MotionSkillCard v-for="(category, index) in skillCategories" :key="index" :skills="category.skills"
+					:initial="{ opacity: 0, y: 30 }" :whileInView="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
+					:transition="{ duration: 0.6, delay: index * 0.2 }" :title="category.title" />
 			</div>
 			<div class="text-center">
 				<h3 class="text-xl font-semibold text-white mb-8">Stacks</h3>
 				<div class="flex flex-wrap justify-center gap-3">
-					<span v-for="(tech, index) in techs" :key="index"
+					<motion.span v-for="(tech, index) in techs" :key="tech" :initial="{ opacity: 0, scale: 0.8 }"
+						:whileInView="{ opacity: 1, scale: 1 }" :viewport="{ once: true }" :transition="{ delay: index * 0.03 }"
+						:whileHover="{ scale: 1.1, backgroundColor: 'rgba(139, 92, 246, 0.2)' }"
 						class="px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700/50 text-gray-400 text-sm hover:text-purple-300 hover:border-purple-500/50 transition-all duration-300 cursor-default">
 						{{ tech }}
-					</span>
+					</motion.span>
 				</div>
 			</div>
 		</div>
 	</section>
 </template>
 <script setup lang="ts">
+import { motion } from "motion-v"
+
 import SkillCard from './Cards/SkillCard.vue';
+const MotionSkillCard = motion.create(SkillCard);
 import type { categorySkill } from '@/types/categorySkill';
 const techs: string[] = [
 	'PHP', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Node.js',

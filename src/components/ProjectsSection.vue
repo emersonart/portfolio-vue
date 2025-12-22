@@ -15,7 +15,9 @@
 				</p>
 			</div>
 			<div class="grid md:grid-cols-2 gap-6">
-				<ProjectCard v-for="(project, index) in Projects" :key="index" :project="project" />
+				<MotionProjectCard :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }"
+					:viewport="{ once: true }" v-for="(project, index) in Projects" :key="index" :project="project"
+					:transition="{ delay: index * 0.03 }" />
 			</div>
 
 		</div>
@@ -23,7 +25,9 @@
 
 </template>
 <script setup lang="ts">
+import { motion } from "motion-v"
 import ProjectCard from './Cards/ProjectCard.vue';
+const MotionProjectCard = motion.create(ProjectCard);
 import type { Project } from '@/types/project';
 
 import rockPaperScissorsImage from '@/assets/images/projects/rock-paper-scissors.jpg';
