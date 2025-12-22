@@ -30,16 +30,9 @@ import rockPaperScissorsImage from '@/assets/images/projects/rock-paper-scissors
 import essenza from '@/assets/images/projects/essenza.jpg';
 import praiaShopping from '@/assets/images/projects/praiashopping.jpg';
 import npsObar from '@/assets/images/projects/npsobar.jpg';
+import prxgestora from '@/assets/images/projects/prxgestora.jpg';
+import prxadvisor from '@/assets/images/projects/prxadvisor.jpg';
 const Projects: Project[] = [
-	{
-		title: 'Rock, Paper and Scissors',
-		description: 'Projeto de estudos de vue para testar conceitos básicos.',
-		image: rockPaperScissorsImage,
-		tags: ['Vue', 'Tailwindcss', 'Vite'],
-		github: 'https://github.com/emersonart/rock-paper-scissors',
-		live: null,
-		featured: true,
-	},
 	{
 		title: 'Essenza Saúde e Bem-estar',
 		description: 'Site institucional da clínica Essenza Sáude e Bem Estar',
@@ -50,14 +43,42 @@ const Projects: Project[] = [
 		featured: true,
 	},
 	{
+		title: 'Rock, Paper and Scissors',
+		description: 'Projeto de estudos de vue para testar conceitos básicos.',
+		image: rockPaperScissorsImage,
+		tags: ['Vue', 'Tailwindcss', 'Vite'],
+		github: 'https://github.com/emersonart/rock-paper-scissors',
+		live: null,
+		featured: false,
+	},
+	{
+		title: 'PRX Gestora',
+		description: 'Site wordpress personalizado para empresa de investimentos.',
+		image: prxgestora,
+		tags: ['PHP', 'Wordpress', 'MySQL', 'HTML', 'CSS', 'jQuery', 'Beaver Builder'],
+		github: 'https://github.com/emersonart/prx-capital-advisor',
+		live: 'https://gestora.prxcapital.com.br',
+		featured: false,
+	},
+	{
 		title: 'Praia Shopping',
 		description: 'Site institucional do Praia Shopping (Natal-RN)',
 		image: praiaShopping,
 		tags: ['PHP', 'Codeigniter 3', 'MySQL', 'jQuery', 'HTML', 'CSS', 'Swiper.js', 'Bootstrap 5'],
 		github: null,
 		live: 'https://praiashopping.com.br',
+		featured: true,
+	},
+	{
+		title: 'PRX Advisor',
+		description: 'Site wordpress personalizado para empresa de investimentos.',
+		image: prxadvisor,
+		tags: ['PHP', 'Wordpress', 'MySQL', 'HTML', 'CSS', 'jQuery', 'Beaver Builder'],
+		github: 'https://github.com/emersonart/prx-capital-advisor',
+		live: 'https://advisor.prxcapital.com.br',
 		featured: false,
 	},
+
 	{
 		title: 'Ôbar Restaurante (Natal-RN)',
 		description: 'Simples sistema NPS para avaliação de atendimento em balcão.',
