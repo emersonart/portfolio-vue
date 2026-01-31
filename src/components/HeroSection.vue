@@ -32,7 +32,7 @@
 					<i class="pi pi-github text-2xl group-hover:text-purple-400 transition-colors"></i>
 					<span class="text-md">Github</span>
 				</a>
-				<a variant="outlined" size="large" href="https://www.linkedin.com/in/emerson-bd-silva/" target="_blank"
+				<a variant="outlined" size="large" href="https://www.linkedin.com/in/emersonart/" target="_blank"
 					rel="noopener noreferrer"
 					class="flex align-center flex-row gap-4  justify-center px-6 font-bold py-3 border-2 rounded-full cursor-pointer bg-transparent border-purple-500/30 text-white hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300 group w-full">
 					<i class="pi pi-linkedin text-2xl group-hover:text-purple-400 transition-colors"></i>
