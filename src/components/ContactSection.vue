@@ -62,7 +62,7 @@ const contactInfos: contactInfo[] = [
 		icon: 'pi pi-linkedin',
 		label: 'Linkedin',
 		value: 'Emerson Bruno',
-		href: 'https://linkedin.com/in/emerson-bd-silva/',
+		href: 'https://linkedin.com/in/emersonart/',
 		description: 'Disponível no linkedin'
 	},
 	{
